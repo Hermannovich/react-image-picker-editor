@@ -96,7 +96,7 @@ const TabContainer = memo(({
       ))}
     </div>
     <div className="body">
-      {tabsItems.map((tabEl, index) => {
+      {tabsItems.map((tabEl: any, index: number) => {
         if (index < activeTab) {
           return (<div style={{
             transform: 'translate3d(-100%, 0px, 0px)',

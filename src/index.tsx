@@ -60,7 +60,6 @@ const ReactImagePickerEditor = memo(
     const imageName = useRef("donload");
 
     useEffect(() => {
-      appendLinkIconsToHead();
       processConfig();
     }, [config]);
 
@@ -121,19 +120,6 @@ const ReactImagePickerEditor = memo(
           setLabels({ ...labelDe });
         }
       }
-    }
-
-    function appendLinkIconsToHead() {
-      let head: HTMLElement = document.head;
-      let linkIcons: HTMLElement | null = head.querySelector(
-        "#ngp-image-picker-icons-id"
-      );
-      if (linkIcons) return;
-      let link = document.createElement("link");
-      link.href = "https://fonts.googleapis.com/icon?family=Material+Icons";
-      link.rel = "stylesheet";
-      link.id = "ngp-image-picker-icons-id";
-      head.appendChild(link);
     }
 
     function onUpload(event: any) {

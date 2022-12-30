@@ -1,6 +1,7 @@
 export interface ImagePickerConf {
   width?: string;
   height?: string;
+  iconSize?: number;
   borderRadius?: string;
   aspectRatio?: number | null;
   objectFit?: "cover" | "contain" | "fill" | "revert" | "scale-down";

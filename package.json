@@ -1,10 +1,10 @@
 {
-  "name": "react-image-picker-editor",
-  "version": "1.2.0",
+  "name": "@hermannovich/react-image-picker-editor",
+  "version": "1.2.1",
   "description": "React library for the selection, edition and compression of images in png, jpeg and webp formats.",
   "author": "josealejandro2928",
   "license": "MIT",
-  "repository": "josealejandro2928/react-image-picker-editor",
+  "repository": "Hermannovich/react-image-picker-editor",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
@@ -24,7 +24,7 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": ">=17.0.2"
+    "react": ">=18.2.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.3",
@@ -48,6 +48,9 @@
     "gh-pages": "^2.2.0",
     "microbundle-crl": "^0.13.11",
     "npm-run-all": "^4.1.5",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-normalize": "^10.0.1",
+    "postcss-preset-env": "^7.8.3",
     "react": ">=17.0.2",
     "react-dom": ">=17.0.2",
     "react-scripts": "^5.0.0",
@@ -57,7 +60,6 @@
   "files": [
     "dist"
   ],
-  "dependencies": {},
   "keywords": [
     "react",
     "image picker",
@@ -68,5 +70,8 @@
     "image",
     "compress image",
     "cropping images"
-  ]
+  ],
+  "dependencies": {
+    "react-svg": "^15.1.17"
+  }
 }

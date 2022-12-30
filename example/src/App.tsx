@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 
-import ReactImagePickerEditor, { ImagePickerConf } from 'react-image-picker-editor';
+import ReactImagePickerEditor from '@hermannovich/react-image-picker-editor';
 
-import 'react-image-picker-editor/dist/index.css'
+import '@hermannovich/react-image-picker-editor/dist/index.css';
 import Header from './components/Header/Header';
 
 const App = () => {
 
-  const config2: ImagePickerConf = {
+  const config2: any = {
     borderRadius: '8px',
     language: 'en',
     width: '330px',
@@ -15,6 +15,7 @@ const App = () => {
     objectFit: 'contain',
     // aspectRatio: 4 / 3,
     compressInitial: null,
+    iconSize: 48
   };
 
   const [imageSrc, setImageSrc] = useState<string | null | undefined>('');
